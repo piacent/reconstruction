@@ -17,4 +17,5 @@ __init__.py
 *.bak
 *.ipynb_checkpoints/
 *.out
+PMTreco/tmp
 README_PARAMETERS.txt

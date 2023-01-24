@@ -19,7 +19,7 @@ class PMTreco:
 
         if not isinstance(run_number, int):
             self.run_list = run_number
-        else: self.run_list = [run_number]
+        else: self.run_list = [run_number] 
         
         
         self.path    = path

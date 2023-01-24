@@ -18,8 +18,8 @@ class PMTreco:
                  ped = False):
 
         if not isinstance(run_number, int):
-            self.run_list = [run_number]
-        else: self.run_list = run_number
+            self.run_list = run_number
+        else: self.run_list = [run_number]
         
         
         self.path    = path
@@ -84,6 +84,7 @@ class PMTreco:
         wfs = []
         for r in self.run_list:
             
+            print(r)
             if(os.path.exists(self.path+'WFs_{:05d}.npy'.format(r))):
                 wfs.append(np.load(self.path+'WFs_{:05d}.npy'.format(r), allow_pickle=True))
             else:
